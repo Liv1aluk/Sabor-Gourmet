@@ -1,37 +1,23 @@
-.botao{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    
-}header{
+header{
     background-color: rgb(246, 207, 147);
     /* justify-content: space-between; */
     color:rgb(60, 28, 5);
     height: 200px;
     margin: 0;
-
-}
-.bunnerimg{
+}.bunnerimg{
     height: 120px;
     border-radius: 50%;
     margin: 20px;
+    
 
 }
 .nomeimg{
     height: 180px;
     margin: 10px;
+    
 
 }
 
-.subtitulo{
-    display:flex;
-    font-size:small;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    background-color: rgb(232, 117, 76);
-
-}
 main{
     display: flex;
 }
@@ -44,20 +30,16 @@ section {
     /* padding: 20px; */
     
 }
-
 p{
     margin-left: 5%;
     margin-right: 10%;
     display: flex;
 }
-.apre{
-    margin-left: 5%;
-}
-.comida{
-    text-align: end;
-}
-.imgpresso{
-    text-align: end;
+.botao{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
 }
 .contato{
     background-color: rgb(227, 159, 106);
