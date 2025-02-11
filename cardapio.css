@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .botao{
     text-align: center;
     display: flex;
     justify-content: space-around;
     
-}header{
+}
+header{
     background-color: rgb(246, 207, 147);
     /* justify-content: space-between; */
     color:rgb(60, 28, 5);
@@ -50,23 +56,39 @@ p{
     margin-right: 10%;
     display: flex;
 }
+
 .apre{
     margin-left: 5%;
 }
 .comida{
     text-align: end;
+    width: 20%;
+    padding: 2%;
+    border-radius: 40%;
+    margin: 4px;;
+}
+.item{
+    background-color: rgb(251, 226, 164);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    display: flex;
+}
+.vaigap {
+    gap:30px;
 }
 .imgpresso{
     text-align: end;
 }
 .contato{
-    background-color: rgb(227, 159, 106);
+    background-color: rgb(152, 107, 73);
     width: 50%;
     text-align:center;
     
 }
 .reserva{
-    background-color: rgb(208, 116, 70);
+    background-color: rgb(126, 71, 44);
     width:50%;
     text-align:center;
 }
@@ -74,6 +96,9 @@ p{
     background-color: rgb(202, 85, 46);
     width:50%;
     text-align:center;
+}
+.cardap{
+    width: 70px;
 }
 
 .botaocontato{
