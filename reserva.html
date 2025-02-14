@@ -1,53 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="reserva.css">
     <title>Sabor Goumet</title>
 </head>
-
-<body>    
-    <header>                
+<body>
+    <div class="header">
         <titulo>
             <div class="banner" style="display: flex;" height="50%">
                 <div>
-                    <img src="/Imagens/bunner.jpg" alt="Logo" class="bunnerimg">
+                    <img src="Imagens/bunner.jpg" alt="Logo" class="bunnerimg">
                     
                 </div>
                 <div>
-                    <h1>Sabor Goumet</h1>
-                    <h1 class="subtitulo">O seu restalrante, com o sabor do amor</h1>
+                    <a href="Restaurante.html"> <img src="Imagens/logo.png" alt="Logo" class="nomeimg"></a>
                 </div>
             </div>  
         </titulo>
-    </header>
+    </div>
+    
+    <div class="botao">
+        <div class="nav">
+            <a href="contato.html" class="contato">Contato</a>
+            <a href="reserva.html" class="reserva">Reserva</a>
+            <a href="cardapio.html" class="cardapio">Cardápio</a>
+        </div>
+    </div>
+    <div class="tabela-container">
+        <table>
+            <tr>
+                <th colspan="7">Mes/ANO</th>
+            </tr>
+            <tr>
+                <th>DOM</th>
+                <th>SEG</th>
+                <th>TER</th>
+                <th>QUA</th>
+                <th>QUI</th>
+                <th>SEX</th>
+                <th>SAB</th>
+            </tr>
+            <tr>
+                <td class="sem-reservas"></td>
+                <td class="fechado"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas"></td>
+                <td class="vazia"></td>
+                <td class="vazia"></td>
+                <td class="sem-reservas"></td>
+            </tr>
+            <tr>
+                <td class="vazia"></td>
+                <td class="fechado"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas"></td>
+                <td class="vazia"></td>
+                <td class="vazia"></td>
+                <td class="vazia"></td>
+            </tr>
+            <tr>
+                <td class="vazia"></td>
+                <td class="fechado"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas"></td>
+                <td class="poucas-reservas"></td>
+                <td class="vazia"></td>
+                <td class="poucas-reservas"></td>
+            </tr>
+            <tr>
+                <td class="poucas-reservas"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas"></td>
+                <td class="poucas-reservas"></td>
+                <td class="poucas-reservas"></td>
+                <td class="poucas-reservas"></td>
+                <td class="poucas-reservas"></td>
+            </tr>
+        </table>
+        <div class="legenda">
+            <img src="Imagens/leg.png" alt="Legenda de cores">
+        </div>
+    </div>
+    <div class="horarios-livres">
+        <p><strong>HORÁRIOS LIVRES HOJE</strong></p>
+        <p><strong>12:00</strong> 5 mesas</p>
+        <p><strong>18:00</strong> 9 mesas</p>
+        <p><strong>22:00</strong> 10 mesas</p>
+    </div>
+    <h2><strong>Marcar um horário</strong> <button class="add-button">+</button></h2>
 
-    <main>
-        <section>
-            <div class="botao">
-                <dir class="contato">
-                    <a href="contato.html">
-                        <p class="botaocontato">📞contato📞</p>
-                    </a>
-                </dir>
+    <div class="container">
+        <table class="calendar">
+            <tr>
+                <th colspan="7">Mes/2025</th>
+            </tr>
+            <tr>
+                <th>D</th>
+                <th>S</th>
+                <th>T</th>
+                <th>Q</th>
+                <th>Q</th>
+                <th>S</th>
+                <th>S</th>
+            </tr>
+            <tr>
+                <td class="sem-reservas" onclick="selecionarDia(this, 1)"></td>
+                <td class="fechado"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas" onclick="selecionarDia(this, 4)"></td>
+                <td class="vazia" onclick="selecionarDia(this, 5)"></td>
+                <td class="vazia"></td>
+                <td class="sem-reservas"></td>
+            </tr>
+            <tr>
+                <td class="vazia" onclick="selecionarDia(this, 8)"></td>
+                <td class="fechado"></td>
+                <td class="fechado"></td>
+                <td class="poucas-reservas" onclick="selecionarDia(this, 11)"></td>
+                <td class="vazia" onclick="selecionarDia(this, 12)"></td>
+                <td class="vazia"></td>
+                <td class="vazia"></td>
+            </tr>
+        </table>
 
-                <dir class="reserva">
-                    <a href="reserva.html">
-                        <p class="botaoreserva">🌞reserva🌛</p>
-                    </a>
-                </dir>
-                </dir>
+        <div class="dropdown-container">
+            <label><strong>DIA</strong>
+                <select id="diaSelecionado">
+                    <label for="data">Escolha uma data:</label>
+            <input type="date" id="data" name="data">
+                
+                </select>
+            </label>
 
-                <dir class="cardapio">
-                    <a href="cardapio.html">
-                        <p class="botaocardapio">🫘cardapio🫘</p>
-                    </a>
-                </dir>
-                </dir>
-            </div>
+            <label><strong>Horario</strong>
+                <select id="horarioSelecionado">
+                    <option>Selecione</option>
+                    <option>12:00</option>
+                    <option>18:00</option>
+                    <option>22:00</option>
+                </select>
+            </label>
 
-        </section>
+            <label><strong>Clientes</strong>
+                <select id="clientesSelecionado">
+                    <option>Selecione</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select>
+            </label>
+        </div>
+    </div>
 
-    </main>
+    <script src="script.js"></script>
 </body>
+</html>

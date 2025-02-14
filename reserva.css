@@ -1,75 +1,212 @@
-header{
-    background-color: rgb(246, 207, 147);
-    /* justify-content: space-between; */
-    color:rgb(60, 28, 5);
-    height: 200px;
-    margin: 0;
-}.bunnerimg{
-    height: 120px;
-    border-radius: 50%;
-    margin: 20px;
-    
-
-}
-.nomeimg{
-    height: 180px;
-    margin: 10px;
-    
-
+/* Define estilos globais para todos os elementos */
+* { 
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Mantém o tamanho do elemento fixo considerando borda e padding */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
 }
 
-main{
-    display: flex;
-}
-section {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(255, 252, 217);
-    /* gap: 20px; */
-    align-items: flex-start;
-    margin: 0%;
-    /* padding: 20px; */
-    
-}
-p{
-    margin-left: 5%;
-    margin-right: 10%;
-    display: flex;
-}
-.botao{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    
-}
-.contato{
-    background-color: rgb(227, 159, 106);
-    width: 50%;
-    text-align:center;
-    
-}
-.reserva{
-    background-color: rgb(208, 116, 70);
-    width:50%;
-    text-align:center;
-}
-.cardapio{
-    background-color: rgb(202, 85, 46);
-    width:50%;
-    text-align:center;
+/* Define estilos básicos para o corpo da página */
+body { 
+    background-color: #f9f9f9; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto cinza escuro */
 }
 
-.botaocontato{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
+/* ---- Cabeçalho ---- */
+.header { 
+    background-color: rgb(246, 207, 147); /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
-.botaoreserva{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
+
+/* Container para o banner */
+.banner { 
+    display: flex; /* Usa flexbox para organizar os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
-.botaocardapio{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
+
+/* Imagem do banner */
+.bunnerimg { 
+    height: 120px; /* Define altura */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin: 20px; /* Adiciona espaçamento externo */
+}
+
+/* Imagem do nome */
+.nomeimg { 
+    height: 180px; /* Define altura */
+    margin: 10px; /* Adiciona espaçamento externo */
+}
+
+/* ---- Navegação ---- */
+.nav { 
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Adiciona espaço entre os elementos */
+    background-color: white; /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estiliza os links da navegação */
+.nav a { 
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: white; /* Cor do texto branca */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Cores específicas para cada botão */
+.contato { background-color: #b22222; } /* Vermelho escuro */
+.reserva { background-color: #a0522d; } /* Marrom */
+.cardapio { background-color: #caa539; } /* Amarelo ouro */
+
+/* Efeito ao passar o mouse nos links */
+.nav a:hover { 
+    filter: brightness(1.2); /* Aumenta o brilho em 20% */
+}
+
+/* ---- Tabelas ---- */
+.tabela-container { 
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens */
+    gap: 20px; /* Adiciona espaçamento entre os elementos */
+    margin: 20px 0; /* Adiciona espaçamento vertical */
+}
+
+/* Estiliza a tabela */
+table { 
+    width: 320px; /* Define largura */
+    border-collapse: separate; /* Mantém espaços entre células */
+    border-spacing: 5px; /* Define espaçamento entre células */
+    background: white; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+/* Estiliza células da tabela */
+th, td { 
+    width: 40px; /* Define largura */
+    height: 40px; /* Define altura */
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 16px; /* Define tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estiliza o cabeçalho da tabela */
+th { 
+    background-color: rgb(218, 46, 46); /* Fundo vermelho */
+    color: white; /* Texto branco */
+}
+
+/* Diferentes estados das células da tabela */
+.fechado { background-color: rgb(150, 9, 9); color: white; } /* Reservas fechadas */
+.sem-reservas { background-color: goldenrod; color: black; } /* Sem reservas */
+.poucas-reservas { background-color: lightgreen; } /* Poucas reservas */
+.vazia { background-color: lightgray; } /* Vazia */
+
+/* ---- Legenda ---- */
+.legenda { 
+    background: white; /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Ajusta a imagem da legenda */
+.legenda img { 
+    width: 250px; /* Define a largura */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* ---- Horários Disponíveis ---- */
+.horarios-livres { 
+    background-color: #e6e174; /* Cor de fundo amarelo claro */
+    padding: 15px 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-size: 14px; /* Define tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    max-width: 250px; /* Define a largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+/* Ajusta o espaçamento dos parágrafos */
+.horarios-livres p { 
+    margin: 5px 0; /* Define espaçamento vertical */
+}
+
+/* ---- Botão Adicionar ---- */
+h2 { 
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px; /* Adiciona espaçamento entre os elementos */
+    margin: 20px 0; /* Adiciona espaçamento vertical */
+}
+
+/* Estiliza o botão de adicionar */
+.add-button { 
+    border: none; /* Remove borda */
+    background: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    font-size: 18px; /* Define tamanho da fonte */
+    width: 30px; /* Define largura */
+    height: 30px; /* Define altura */
+    border-radius: 50%; /* Torna o botão circular */
+    cursor: pointer; /* Define cursor como ponteiro */
+    transition: 0.3s; /* Adiciona transição suave */
+}
+
+/* Muda a cor do botão ao passar o mouse */
+.add-button:hover { 
+    background: #555; /* Fundo cinza escuro */
+}
+
+/* ---- Formulário de Seleção ---- */
+.container { 
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Adiciona espaçamento */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+}
+
+/* Container para os dropdowns */
+.dropdown-container { 
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    gap: 10px; /* Espaçamento entre elementos */
+    background: white; /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estiliza os rótulos */
+label { 
+    background-color: goldenrod; /* Fundo dourado */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Distribui elementos */
+    align-items: center; /* Alinha verticalmente */
+    font-weight: bold; /* Texto em negrito */
+    width: 200px; /* Define largura */
+}
+
+/* Estiliza os selects e inputs */
+select, input { 
+    border: none; /* Remove borda */
+    background: transparent; /* Fundo transparente */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Define cursor como ponteiro */
+    width: 100%; /* Ocupa toda a largura */
 }

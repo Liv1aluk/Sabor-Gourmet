@@ -1,215 +1,159 @@
 /* reset dos parâmetros globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove os preenchimentos padrão */
+  box-sizing: border-box; /* Mantém o tamanho fixo, incluindo padding e borda */
 }
 
+/* Estiliza o cabeçalho */
 header {
-  background-color: rgb(246, 207, 147);
-  /* justify-content: space-between; */
-  color: rgb(60, 28, 5);
-  height: 200px;
-  margin: 0;
+  background-color: rgb(246, 207, 147); /* Define a cor de fundo do cabeçalho */
+  color: rgb(60, 28, 5); /* Define a cor do texto */
+  height: 200px; /* Define a altura do cabeçalho */
+  margin: 0; /* Remove qualquer margem */
 }
 
+/* Estiliza a imagem do banner */
 .bunnerimg {
-  height: 120px;
-  border-radius: 50%;
-  margin: 20px;
+  height: 120px; /* Define a altura */
+  border-radius: 50%; /* Torna a imagem circular */
+  margin: 20px; /* Adiciona espaçamento externo */
 }
 
+/* Estiliza a imagem do nome */
 .nomeimg {
-  height: 180px;
-  margin: 10px;
+  height: 180px; /* Define a altura */
+  margin: 10px; /* Adiciona espaçamento externo */
 }
 
+/* Define o layout principal */
 main {
-  display: flex;
+  display: flex; /* Usa flexbox para organizar o conteúdo */
 }
 
+/* Estiliza a barra lateral */
 aside {
-  background-color: rgb(255, 102, 64);
-  width: 100%;
-  max-width: 200px;
-  padding: 30px 20px 20px;
-  min-height: calc(100dvh - 55px);
-  border: 20%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: rgb(255, 102, 64); /* Define a cor de fundo */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 200px; /* Define a largura máxima */
+  padding: 30px 20px 20px; /* Define o preenchimento interno */
+  min-height: calc(100dvh - 55px); /* Define a altura mínima */
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  gap: 10px; /* Adiciona espaço entre os elementos internos */
 }
 
+/* Estiliza a seção principal */
 section {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: rgb(255, 252, 217);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte do texto */
+  background-color: rgb(255, 252, 217); /* Define a cor de fundo */
+  padding: 20px; /* Adiciona espaçamento interno */
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  gap: 10px; /* Adiciona espaçamento entre os elementos */
 }
 
+/* Estiliza os parágrafos dentro da seção */
 section p {
-  margin-left: 5%;
-  margin-right: 10%;
-  display: flex;
+  margin-left: 5%; /* Adiciona margem à esquerda */
+  margin-right: 10%; /* Adiciona margem à direita */
+  display: flex; /* Usa flexbox */
 }
 
+/* Estiliza a classe recado */
 .recado {
-  margin-left: 2%;
-  margin-right: 10%;
-  font-size: 200%;
+  margin-left: 2%; /* Define margem à esquerda */
+  margin-right: 10%; /* Define margem à direita */
+  font-size: 200%; /* Define o tamanho da fonte */
 }
 
+/* Estiliza os botões */
 .botao {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
+  text-align: center; /* Centraliza o texto */
+  display: flex; /* Usa flexbox */
+  justify-content: space-around; /* Distribui os elementos igualmente */
 }
 
-.frente {
-  margin: auto;
-  display: block;
-}
-
+/* Estiliza os botões de contato, reserva e cardápio */
 .contato {
-  background-color: rgb(227, 159, 106);
-  /* width: 50%; */
-  text-align: center;
+  background-color: rgb(227, 159, 106); /* Define a cor de fundo */
+  text-align: center; /* Centraliza o texto */
 }
 
 .reserva {
-  background-color: rgb(208, 116, 70);
-  /* width: 50%; */
-  text-align: center;
+  background-color: rgb(208, 116, 70); /* Define a cor de fundo */
+  text-align: center; /* Centraliza o texto */
 }
 
 .cardapio {
-  background-color: rgb(202, 85, 46);
-  /* width: 50%; */
-  text-align: center;
+  background-color: rgb(202, 85, 46); /* Define a cor de fundo */
+  text-align: center; /* Centraliza o texto */
 }
 
-.botaocontato {
-  color: aliceblue;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: x-large;
+/* Estiliza os textos dos botões */
+.botaocontato, .botaoreserva, .botaocardapio {
+  color: aliceblue; /* Define a cor do texto */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte */
+  font-size: x-large; /* Define o tamanho da fonte */
 }
 
-.botaoreserva {
-  color: aliceblue;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: x-large;
-}
-
-.botaocardapio {
-  color: aliceblue;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: x-large;
-}
-
-
+/* Estiliza o carrossel de imagens */
 .carrossel {
-  width: 100%;
-  max-width: 400px;
-  height: 400px; /* Defina um tamanho fixo */
-  margin: auto;
-  overflow: hidden;
-  position: relative;
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 400px; /* Define a largura máxima */
+  height: 400px; /* Define a altura fixa */
+  margin: auto; /* Centraliza horizontalmente */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+  position: relative; /* Define a posição relativa */
 }
 
+/* Estiliza o slideshow dentro do carrossel */
 .slideshow {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: 100%; /* Ocupa toda a altura disponível */
+  position: relative; /* Define a posição relativa */
 }
 
+/* Estiliza os links do slideshow */
 .slideshow a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  position: absolute; /* Define a posição absoluta */
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a altura */
+  opacity: 0; /* Define opacidade inicial como zero */
+  transition: opacity 1s ease-in-out; /* Adiciona transição suave */
 }
 
+/* Estiliza as imagens do slideshow */
 .slideshow img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: 100%; /* Ocupa toda a altura disponível */
+  object-fit: cover; /* Redimensiona a imagem mantendo a proporção */
 }
 
+/* Define a animação de transição das imagens */
 @keyframes fade {
-  0%, 100% { opacity: 0; }
-  33.33% { opacity: 1; }
-  66.66% { opacity: 0; }
+  0%, 100% { opacity: 0; } /* Começa e termina invisível */
+  33.33% { opacity: 1; } /* No meio da transição, torna-se visível */
+  66.66% { opacity: 0; } /* Retorna à opacidade zero */
 }
 
+/* Aplica animações para cada imagem no slideshow */
 .slideshow a:nth-child(1) {
-  animation: fade 9s infinite;
+  animation: fade 9s infinite; /* Aplica animação com duração de 9s */
 }
 
 .slideshow a:nth-child(2) {
-  animation: fade 9s infinite 3s;
+  animation: fade 9s infinite 3s; /* Aplica animação com atraso de 3s */
 }
 
 .slideshow a:nth-child(3) {
-  animation: fade 9s infinite 6s;
+  animation: fade 9s infinite 6s; /* Aplica animação com atraso de 6s */
 }
 
+/* Estiliza os links */
 .links {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  padding: 0;
+  display: flex; /* Usa flexbox */
+  flex-direction: row; /* Organiza os elementos em linha */
+  margin: auto; /* Centraliza horizontalmente */
+  padding: 0; /* Remove o preenchimento */
 }
-
-
-
-/* .slideshow {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .slideshow img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 400px;
-  height: 400px;
-  animation: fade 3s infinite;
-}
-
-.slideshow a {
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-@keyframes fade {
-  1% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  33% {
-    opacity: 1;
-  }
-
-  53% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-} */
-

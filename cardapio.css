@@ -1,127 +1,177 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-.botao{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    
-}
-header{
-    background-color: rgb(246, 207, 147);
-    /* justify-content: space-between; */
-    color:rgb(60, 28, 5);
-    height: 200px;
-    margin: 0;
+* {  
+    margin: 0; /* Remove margens padrão de todos os elementos */  
+    padding: 0; /* Remove preenchimento padrão de todos os elementos */  
+    box-sizing: border-box; /* Garante que a largura e altura incluam bordas e preenchimento */  
+}  
 
-}
-.bunnerimg{
-    height: 120px;
-    border-radius: 50%;
-    margin: 20px;
+header {  
+    background-color: rgb(246, 207, 147); /* Define a cor de fundo do cabeçalho */  
+    /* justify-content: space-between; */ /* Comentado: Alinharia os elementos dentro do header com espaço entre eles */  
+    color: rgb(60, 28, 5); /* Define a cor do texto no cabeçalho */  
+    height: 200px; /* Define a altura do cabeçalho */  
+    margin: 0; /* Remove margens */  
+}  
 
-}
-.nomeimg{
-    height: 180px;
-    margin: 10px;
+.bunnerimg {  
+    height: 120px; /* Define a altura da imagem do banner */  
+    border-radius: 50%; /* Torna a imagem circular */  
+    margin: 20px; /* Adiciona espaçamento ao redor da imagem */  
+}  
 
-}
+.nomeimg {  
+    height: 180px; /* Define a altura da imagem do nome */  
+    margin: 10px; /* Adiciona espaçamento ao redor da imagem */  
+}  
 
-.subtitulo{
-    display:flex;
-    font-size:small;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    background-color: rgb(232, 117, 76);
+.subtitulo {  
+    display: flex; /* Exibe os elementos em linha flexível */  
+    font-size: small; /* Define o tamanho da fonte pequeno */  
+    align-items: center; /* Alinha os elementos verticalmente ao centro */  
+    text-align: center; /* Centraliza o texto */  
+    justify-content: space-around; /* Distribui os itens uniformemente */  
+    background-color: rgb(232, 117, 76); /* Define a cor de fundo do subtítulo */  
+}  
 
-}
-main{
-    display: flex;
-}
-section {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(255, 252, 217);
-    /* gap: 20px; */
-    align-items: flex-start;
-    margin: 0%;
-    /* padding: 20px; */
-    
-}
+main {  
+    display: flex; /* Organiza o conteúdo principal em layout flexível */  
+}  
 
-p{
-    margin-left: 5%;
-    margin-right: 10%;
-    display: flex;
-}
-dl{
-    margin-left: 40px;
-    gap: 20px;
-}
-dd{
-    gap:20px;
-    margin: 20px;
+section {  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte do texto */  
+    background-color: rgb(255, 252, 217); /* Define a cor de fundo da seção */  
+    /* gap: 20px; */ /* Comentado: Definiria espaçamento entre elementos filhos */  
+    align-items: flex-start; /* Alinha os itens ao topo */  
+    margin: 0%; /* Remove margens */  
+    /* padding: 20px; */ /* Comentado: Definiria preenchimento interno da seção */  
+}  
 
-}
+p {  
+    margin-left: 5%; /* Define margem à esquerda */  
+    margin-right: 10%; /* Define margem à direita */  
+    display: flex; /* Aplica layout flexível ao parágrafo */  
+}  
 
-.apre{
-    margin-left: 5%;
-}
-.comida{
-    text-align: end;
-    align-items: end;
-    width: 100px;
-    padding: 2%;
-    border-radius: 40%;
-    margin: 4px;
-}
-.item{
-    background-color: rgb(251, 226, 164);
-    border-radius: 15px;
-    margin-left: 15px;
-    margin-right: 10%;
-    display: flex;
-}
-.vaigap {
-    gap:30px;
-}
-.imgpresso{
-    text-align: end;
-}
-.contato{
-    background-color: rgb(152, 107, 73);
-    width: 50%;
-    text-align:center;
-    
-}
-.reserva{
-    background-color: rgb(126, 71, 44);
-    width:50%;
-    text-align:center;
-}
-.cardapio{
-    background-color: rgb(202, 85, 46);
-    width:50%;
-    text-align:center;
-}
-.cardap{
-    width: 70px;
-}
+dl {  
+    margin-left: 40px; /* Adiciona espaçamento à esquerda */  
+    gap: 20px; /* Define espaçamento entre os elementos internos */  
+}  
 
-.botaocontato{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-}
-.botaoreserva{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-}
-.botaocardapio{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-}
+dd {  
+    gap: 20px; /* Define espaçamento entre elementos <dd> */  
+    margin: 20px; /* Adiciona espaçamento ao redor do <dd> */  
+}  
+
+.apre {  
+    margin-left: 5%; /* Adiciona margem à esquerda para o elemento de apresentação */  
+}  
+
+.comida {  
+    text-align: end; /* Alinha o texto ao final do elemento */  
+    align-items: end; /* Alinha os itens ao final do container */  
+    width: 100px; /* Define a largura do elemento */  
+    padding: 2%; /* Adiciona preenchimento interno */  
+    border-radius: 40%; /* Arredonda as bordas do elemento */  
+    margin: 4px; /* Define espaçamento ao redor do elemento */  
+}  
+
+.item {  
+    background-color: #ffe5b4; /* Define cor de fundo do item */  
+    border-radius: 10px; /* Arredonda as bordas */  
+    padding: 15px; /* Adiciona espaçamento interno */  
+    margin: 15px 0; /* Define espaçamento entre os itens */  
+    display: flex; /* Aplica layout flexível */  
+    align-items: center; /* Alinha os itens verticalmente ao centro */  
+    justify-content: space-between; /* Distribui os itens uniformemente */  
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha abaixo, se necessário */  
+}  
+
+.item dd {  
+    flex: 1; /* Faz os itens ocuparem o máximo de espaço disponível */  
+    font-size: 16px; /* Define o tamanho da fonte */  
+    color: #333; /* Define a cor do texto */  
+    margin-right: 15px; /* Adiciona espaçamento à direita */  
+}  
+
+.vaigap {  
+    gap: 30px; /* Define espaçamento entre elementos */  
+}  
+
+.imgpresso {  
+    display: flex; /* Define layout flexível */  
+    flex-direction: column; /* Organiza os elementos em coluna */  
+    align-items: center; /* Centraliza os elementos horizontalmente */  
+}  
+
+.imgpresso img {  
+    width: 100px; /* Define a largura da imagem */  
+    height: auto; /* Mantém a proporção da imagem */  
+    border-radius: 5px; /* Arredonda as bordas da imagem */  
+}  
+
+.imgpresso p {  
+    font-weight: bold; /* Deixa o texto em negrito */  
+    color: #b22222; /* Define cor do texto para vermelho escuro */  
+    border-radius: 5px; /* Arredonda as bordas do parágrafo */  
+}  
+
+.nav {  
+    display: flex; /* Exibe a navegação em linha */  
+    justify-content: center; /* Centraliza os itens */  
+    gap: 20px; /* Define espaçamento entre os elementos */  
+    background-color: white; /* Define a cor de fundo */  
+    padding: 15px; /* Adiciona preenchimento interno */  
+    border-radius: 10px; /* Arredonda as bordas */  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */  
+}  
+
+.nav a {  
+    padding: 10px 20px; /* Define espaçamento interno */  
+    text-decoration: none; /* Remove sublinhado dos links */  
+    font-weight: bold; /* Deixa o texto em negrito */  
+    color: white; /* Define a cor do texto */  
+    border-radius: 5px; /* Arredonda as bordas do botão */  
+    transition: 0.3s; /* Suaviza a transição de efeitos */  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte */  
+    font-size: x-large; /* Define o tamanho da fonte */  
+    text-align: center; /* Centraliza o texto */  
+}  
+
+.nav a:hover {  
+    filter: brightness(1.2); /* Aumenta o brilho ao passar o mouse */  
+}  
+
+.botao {  
+    text-align: center; /* Centraliza o conteúdo */  
+    display: flex; /* Aplica layout flexível */  
+    justify-content: space-around; /* Distribui os itens uniformemente */  
+}  
+
+.contato, .reserva, .cardapio {  
+    color: white; /* Define a cor do texto */  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte */  
+    font-size: x-large; /* Define o tamanho da fonte */  
+}  
+
+.contato { background-color: #b22222; } /* Define a cor de fundo do botão de contato */  
+.reserva { background-color: #a0522d; } /* Define a cor de fundo do botão de reserva */  
+.cardapio { background-color: #caa539; } /* Define a cor de fundo do botão de cardápio */  
+
+table {  
+    width: 60%; /* Define a largura da tabela */  
+    margin: 20px auto; /* Centraliza a tabela */  
+    border-collapse: collapse; /* Remove espaços entre as bordas */  
+    background-color: #ffeb99; /* Define cor de fundo */  
+    border-radius: 10px; /* Arredonda as bordas */  
+}  
+
+th, td {  
+    padding: 12px; /* Define espaçamento interno */  
+    text-align: center; /* Centraliza o conteúdo */  
+    border: 1px solid #ddd; /* Define bordas suaves */  
+}  
+
+h1 {  
+    text-align: center; /* Centraliza o título */  
+    color: #8b0000; /* Define a cor do título */  
+    font-size: 24px; /* Define o tamanho da fonte */  
+}  
